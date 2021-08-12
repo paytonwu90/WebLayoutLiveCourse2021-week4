@@ -10,15 +10,53 @@
 </head>
 
 <body>
-  <header class="header">
-    這是 header
-  </header>
+  <div class="header">
+    <div class="headerContainer">
+      <a class="logoWrapper" href="index.html">
+        <img class="logo" src="https://hexschool.github.io/webLayoutTraining1st/week3/logo.png" alt="logo">
+      </a>
+      <ul class="navbar">
+        <li><a href="#">系列鏡框</a></li>
+        <li><a href="stores.html">門市據點</a></li>
+        <li><a href="#">部落格</a></li>
+        <li><a href="faq.html">常見問題</a></li>
+      </ul>
+    </div>
+  </div>
 
   <%- contents %>
 
-  <footer class="footer">
-    footer
-  </footer>
+  <div class="footer">
+    <div class="container">
+      <div class="footer-mainInfo">
+        <div class="footer-navContainer">
+          <ul class="footer-nav">
+            <li><a href="#">首頁</a></li>
+            <li><a href="#">系列鏡框</a></li>
+            <li><a href="stores.html">門市據點</a></li>
+            <li><a href="#">部落格</a></li>
+            <li><a href="faq.html">常見問題</a></li>
+          </ul>
+          <ul class="socialIcons">
+            <li><a href="#"><img src="https://hexschool.github.io/webLayoutTraining1st/week3/icon-fb.svg" alt="facebook-logo"></a></li>
+            <li><a href="#"><img src="https://hexschool.github.io/webLayoutTraining1st/week3/icon-ig.svg" alt="instagram-logo"></a></li>
+            <li><a href="#"><img src="https://hexschool.github.io/webLayoutTraining1st/week3/icon-line.svg" alt="line-logo"></a></li>
+          </ul>
+        </div>
+        <ul class="contactInfo">
+          <li><a href="tel:0800-000-000"><span class="iconWrapper"><img src="https://hexschool.github.io/webLayoutTraining1st/week3/icon-phone.svg" alt="icon-phone"></span>0800-000-000</a></li>
+          <li><a href="mailto:glasses@business.com"><span class="iconWrapper"><img src="https://hexschool.github.io/webLayoutTraining1st/week3/icon-mail.svg" alt="icon-mail"></span>glasses@business.com</a></li>
+        </ul>
+      </div>
+      <div class="footer-infoThatNoOneCares">
+        <p class="copyright">Copyright © 2020 Glasses.All rights reserved.</p>
+        <ul class="privacyAndTerms">
+          <li><a href="#">隱私權政策</a></li>
+          <li><a href="#">服務條款</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
   <script src="./assets/js/vendors.js"></script>
   <script src="./assets/js/all.js"></script>
 </body>

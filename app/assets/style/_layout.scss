@@ -1,0 +1,212 @@
+.header {
+  background-color: $red;
+  .headerContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 56px 30px 88px;
+    @include pad {
+      padding: 30px 0;
+      max-width: 690px;
+      margin: 0 auto;
+    }
+    @include mobile {
+      flex-direction: column;
+      padding: 0;
+      max-width: 100%;
+    }
+  }
+  .logoWrapper {
+    display: flex;
+    justify-content: center;
+    @include mobile {
+      width: 100%;
+      padding: 10px 0;
+    }
+  }
+  .logo {
+    @include mobile {
+      width: 48px;
+    }
+  }
+  .navbar {
+    display: flex;
+    flex-wrap: wrap;
+    color: #fff;
+    font-size: 20px;
+    @include mobile {
+      width: 100%;
+    }
+    li {
+      @include mobile {
+        width: 50%;
+        border: 1px solid #fff;
+        text-align: center;
+      }
+      &:not(:last-child) {
+        /* margin-right: 64px; */
+        @include pad {
+          /* margin-right: 40px; */
+        }
+        @include mobile {
+          margin-right: 0;
+        }
+      }
+      a {
+        display: block;
+        padding: 10px 32px;
+        transition: all 0.3s;
+        &:hover {
+          color: darken(#fff, 20%);
+        }
+        @include pad {
+          padding-left: 20px;
+          padding-right: 20px;
+        }
+        @include mobile {
+          padding: 8px 0;
+        }
+      }
+    }
+  }
+}
+
+.footer {
+  color: #fff;
+  background-color: $red;
+  padding: 32px 0 40px 0;
+  @include pad {
+    padding-top: 32px;
+  }
+  @include mobile {
+    padding-top: 25px;
+    padding-bottom: 25px;
+  }
+  .footer-mainInfo {
+    padding-bottom: 24px;
+    border-bottom: 1px solid #fff;
+    @include pad {
+      padding-bottom: 20px;
+    }
+    @include mobile {
+      display: flex;
+      flex-direction: row-reverse;
+      justify-content: space-between;
+      align-items: flex-start;
+    }
+  }
+  .footer-navContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 24px;
+  }
+  .footer-nav {
+    display: flex;
+    @include mobile {
+      display: none;
+    }
+    li {
+      &:not(:last-child) {
+        margin-right: 48px;
+        @include pad {
+          margin-right: 40px;
+        }
+      }
+      a {
+        transition: all 0.3s;
+        &:hover {
+          color: darken(#fff, 20%);
+        }
+      }
+    }
+  }
+  .socialIcons {
+    display: flex;
+    li {
+      @include pad {
+        width: 24px;
+      }
+      &:not(:last-child) {
+        margin-right: 32px;
+        @include pad {
+          margin-right: 24px;
+        }
+      }
+    }
+  }
+  .contactInfo {
+    li {
+      &:not(:last-child) {
+        margin-bottom: 16px;
+        @include pad {
+          margin-bottom: 12px;
+        }
+        @include mobile {
+          margin-bottom: 6px;
+        }
+      }
+      a {
+        display: flex;
+        align-items: center;
+        font-size: 36px;
+        @include pad {
+          font-size: 20px;
+        }
+        @include mobile {
+          font-size: 16px;
+        }
+      }
+      .iconWrapper {
+        width: 40px;
+        margin-right: 20px;
+        @include pad {
+          width: 20px;
+          margin-right: 10px;
+        }
+        @include mobile {
+          width: 16px;
+          margin-right: 5px;
+        }
+      }
+    }
+  }
+  .footer-infoThatNoOneCares {
+    padding-top: 32px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    @include pad {
+      padding-top: 24px;
+    }
+    @include mobile {
+      padding-top: 16px;
+    }
+  }
+  .copyright {
+    @include mobile {
+      font-size: 14px;
+      margin-bottom: 8px;
+    }
+  }
+  .privacyAndTerms {
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 14px;
+    li {
+      @include mobile {
+        width: 100%;
+      }
+      &:not(:last-child) {
+        margin-right: 48px;
+        @include pad {
+          margin-right: 24px;
+        }
+        @include mobile {
+          margin-right: 0;
+          margin-bottom: 8px;
+        }
+      }
+    }
+  }
+}
