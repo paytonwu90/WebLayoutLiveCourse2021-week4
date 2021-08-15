@@ -46,6 +46,19 @@ table {
   border-collapse: collapse;
   border-spacing: 0; }
 
+.container {
+  max-width: 1140px;
+  /* 加上左右 padding 的寬度 */
+  margin: 0 auto;
+  padding: 0 15px;
+  /* gutter 的 30px / 2 */ }
+  @media (max-width: 992px) {
+    .container {
+      max-width: 720px; } }
+  @media (max-width: 767px) {
+    .container {
+      max-width: 375px; } }
+
 /* 字體設定的順序 */
 body {
   font-family: Roboto, -apple-system, BlinkMacSystemFont, "Segoe UI", "Microsoft JhengHei", "Helvetica Neue", Arial, sans-serif;
@@ -64,19 +77,6 @@ img {
 a {
   text-decoration: none;
   color: inherit; }
-
-.container {
-  max-width: 1140px;
-  /* 加上左右 padding 的寬度 */
-  margin: 0 auto;
-  padding: 0 15px;
-  /* gutter 的 30px / 2 */ }
-  @media (max-width: 992px) {
-    .container {
-      max-width: 720px; } }
-  @media (max-width: 767px) {
-    .container {
-      max-width: 375px; } }
 
 .header {
   background-color: #AA0601; }
