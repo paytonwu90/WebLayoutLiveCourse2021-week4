@@ -17,15 +17,3 @@ a {
   color: inherit;
 }
 
-.container {
-  max-width: 1140px; /* 加上左右 padding 的寬度 */
-  margin: 0 auto;
-  padding: 0 15px; /* gutter 的 30px / 2 */
-  @include pad {
-  	max-width: 720px;
-  }
-  @include mobile {
-  	max-width: 375px;
-  }
-}
-
